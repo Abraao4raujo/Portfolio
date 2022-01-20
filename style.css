@@ -6,7 +6,7 @@
 
 :root{
     --cor01:#BFBDBD;
-    --cor02:#1F2626;
+    --cor02:#1f262649;
     --cor03:#0A0C0D;
     --cor04:#0378A6;
     --cor05:#023859;
@@ -30,9 +30,8 @@ a:hover{
     color: var(--cor04);
 }
 
-.navegacao{
+nav{
     padding: 30px 15px;
-    background-color: var(--cor02);
 }
 
 body{
@@ -59,4 +58,23 @@ p{
     font-family: 'Montserrat Alternates', sans-serif;
     color: white;
     font-size: clamp(1em, 1em + 1vw, 1.5em);
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--cor02);
+}
+
+.cabecalho-imagem{
+    width: 35px;
+    position: relative;
+}
+
+.cabecalho-imagem:hover{
+    top: -2px;
+    box-shadow: 0 2px 2px var(--cor03);
+    border-radius: 12px;
 }
